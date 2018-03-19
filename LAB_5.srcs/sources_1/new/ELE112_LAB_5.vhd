@@ -104,6 +104,7 @@ FSM_transition: PROCESS(CLK)
            WHEN S5 =>
                 IF START = '1' THEN State <= S5;
                 ELSE State <= S1; END IF;    
+           
            WHEN others =>
                 State <= S1;   
         END CASE;
@@ -111,14 +112,33 @@ FSM_transition: PROCESS(CLK)
    END PROCESS;
    
    
-FSM_outPuts: PROCESS(y, clk)
+FSM_outPuts: PROCESS(State, clk)
    BEGIN
     Done <='0';STARTED <='0';LC<='0';LS<='0';ES<='0';SS<='1';LD_X<='0';LD_Y<='0';LD_Z<='0';SCLK <='0';
-     CASE y IS
+     CASE State IS
         WHEN S0 =>
-         
-         -- You need to finish this FSM
-
+        
+        WHEN S1 =>
+            LS <= '1';
+            LC <= '1';
+        
+        WHEN S2 =>
+            SS <= '0';
+        
+        WHEN S3 =>
+            ES <= '1';
+            SCLK <= '1';
+            STARTED <= '1';
+            
+        WHEN S4 =>
+            SS <= '1';
+            ES <= '0';
+            LD_X <= '1';
+            LD_Y <= '1';
+            LD_Z <= '1';
+        
+        WHEN S5 =>
+            DONE <= '1';
           
      END CASE;
    END PROCESS;   
