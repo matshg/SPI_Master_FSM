@@ -1,0 +1,320 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Jan 24 14:31:39 2018
+# Process ID: 2444
+# Current directory: C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.runs/synth_1
+# Command line: vivado.exe -log ELE112_LAB_5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ELE112_LAB_5.tcl
+# Log file: C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.runs/synth_1/ELE112_LAB_5.vds
+# Journal file: C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ELE112_LAB_5.tcl -notrace
+Command: synth_design -top ELE112_LAB_5 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1328 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 327.836 ; gain = 84.965
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ELE112_LAB_5' [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_LAB_5.vhd:52]
+	Parameter N bound to: 8 - type: integer 
+	Parameter TS bound to: 24 - type: integer 
+WARNING: [Synth 8-614] signal 'Reset' is read in the process but is not in the sensitivity list [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_LAB_5.vhd:82]
+WARNING: [Synth 8-614] signal 'MODE' is read in the process but is not in the sensitivity list [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_LAB_5.vhd:113]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ele112_UpDownCounter' declared at 'C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/UP_DOWN_CONTER.vhd:35' bound to instance 'Counter_n' of component 'ele112_UpDownCounter' [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_LAB_5.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'ele112_UpDownCounter' [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/UP_DOWN_CONTER.vhd:43]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ele112_UpDownCounter' (1#1) [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/UP_DOWN_CONTER.vhd:43]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ele112_regn' declared at 'C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ele112_regn.vhd:25' bound to instance 'X_DATA_REG' of component 'ele112_regn' [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_LAB_5.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ele112_regn' [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ele112_regn.vhd:33]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ele112_regn' (2#1) [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ele112_regn.vhd:33]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ele112_regn' declared at 'C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ele112_regn.vhd:25' bound to instance 'Y_DATA_REG' of component 'ele112_regn' [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_LAB_5.vhd:163]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ele112_regn' declared at 'C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ele112_regn.vhd:25' bound to instance 'Z_DATA_REG' of component 'ele112_regn' [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_LAB_5.vhd:165]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'ELE112_shiftlne' declared at 'C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_shiftlne.vhd:34' bound to instance 'SPI_SHIFT_REG' of component 'ELE112_shiftlne' [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_LAB_5.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ELE112_shiftlne' [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_shiftlne.vhd:44]
+	Parameter N bound to: 24 - type: integer 
+WARNING: [Synth 8-614] signal 'R' is read in the process but is not in the sensitivity list [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_shiftlne.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'ELE112_shiftlne' (3#1) [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_shiftlne.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element LS_reg was removed.  [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_LAB_5.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'ELE112_LAB_5' (4#1) [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_LAB_5.vhd:52]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 377.059 ; gain = 134.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 377.059 ; gain = 134.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 377.059 ; gain = 134.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/UP_DOWN_CONTER.vhd:52]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-802] inferred FSM for state register 'y_reg' in module 'ELE112_LAB_5'
+WARNING: [Synth 8-6014] Unused sequential element y_reg was removed.  [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_LAB_5.vhd:85]
+INFO: [Synth 8-5544] ROM "TX_register" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "y" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "y" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "y" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element y_reg was removed.  [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_LAB_5.vhd:85]
+WARNING: [Synth 8-6014] Unused sequential element y_reg was removed.  [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_LAB_5.vhd:85]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                              000 |                              000
+                      s1 |                              001 |                              001
+                      s2 |                              010 |                              010
+                      s3 |                              011 |                              011
+                      s4 |                              100 |                              100
+                      s5 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'y_reg' using encoding 'sequential' in module 'ELE112_LAB_5'
+WARNING: [Synth 8-6014] Unused sequential element y_reg was removed.  [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/ELE112_LAB_5.vhd:85]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 377.059 ; gain = 134.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ELE112_LAB_5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 8     
+Module ele112_UpDownCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module ele112_regn 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module ELE112_shiftlne 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Z" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element Counter_n/Q_reg was removed.  [C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/UP_DOWN_CONTER.vhd:50]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 522.598 ; gain = 279.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 522.598 ; gain = 279.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 522.602 ; gain = 279.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 522.602 ; gain = 279.730
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 522.602 ; gain = 279.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 522.602 ; gain = 279.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 522.602 ; gain = 279.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 522.602 ; gain = 279.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 522.602 ; gain = 279.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     2|
+|2     |LUT1 |     2|
+|3     |LUT2 |     2|
+|4     |LUT3 |     9|
+|5     |LUT4 |     7|
+|6     |LUT5 |    13|
+|7     |LUT6 |     5|
+|8     |FDCE |    30|
+|9     |FDPE |     9|
+|10    |FDRE |    25|
+|11    |LDC  |     2|
+|12    |IBUF |    10|
+|13    |OBUF |    37|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------------+---------------------+------+
+|      |Instance        |Module               |Cells |
++------+----------------+---------------------+------+
+|1     |top             |                     |   153|
+|2     |  Counter_n     |ele112_UpDownCounter |    22|
+|3     |  SPI_SHIFT_REG |ELE112_shiftlne      |    40|
+|4     |  X_DATA_REG    |ele112_regn          |     9|
+|5     |  Y_DATA_REG    |ele112_regn_0        |     9|
+|6     |  Z_DATA_REG    |ele112_regn_1        |    17|
++------+----------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 522.602 ; gain = 279.730
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 522.602 ; gain = 279.730
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 522.602 ; gain = 279.730
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDC => LDCE: 2 instances
+
+31 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 619.512 ; gain = 384.602
+INFO: [Common 17-1381] The checkpoint 'C:/Users/geirj/OneDrive - Universitetet i Agder/Documents/ELE112/LAB_5/LAB_5/LAB_5.runs/synth_1/ELE112_LAB_5.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 619.512 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 24 14:31:57 2018...
